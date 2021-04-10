@@ -38,7 +38,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Productos</a></li>
                   <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                  <li><a class="dropdown-item" href="#"> Novedades</a></li>
+                  <li><a class="dropdown-item" href="#"> Novedadess</a></li>
                 </ul>
               </li>              
             </ul>            
