@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../resources/img/dashboard/icono.png" type="favicon/x-icon">
+
+    <title>MarketFar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../resources/css/dashboard/dashboard.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+
+<body class="g-0">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-6">Administración de Usuarios</h1>
+            </div>
+            <div class="col-lg-6">
+                <img class="" src="../../resources/img/dashboard/crud_usuario.png" alt="" width="70px">
+            </div>    
+        </div>  
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Agregar registro
+                </button>
+                <br>
+                <div class="row">
+                    <div class="col-lg-2">
+
+                        <label for="inputPassword" class=" col-form-label ">Buscar:</label>
+                        <input type="text" class="form-control" id="inputPassword">
+
+                    </div>
+                </div>
+                <div class="table-responsive"> 
+                    <br>       
+                    <table id="tablaPersonas" class="table table-striped table-bordered table-condensed" style="width:100%">
+                        <thead class="text-center">
+                            <tr class="align-middle">
+                                <th>ID</th>
+                                <th>Usuario</th>
+                                <th>Clave</th>
+                                <th>Estado Usuario</th>                                
+                                <th>Tipo Usuario</th>  
+                                <th>Acciones</th>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td>1</td>
+                                <td>Deigo</td>
+                                <td>deigo2000</td> 
+                                <td>Activo</td>
+                                <td>Básico</td>    
+                                <td class="col-lg-2 ">
+                                    <div class="row justify-content-md-center g-0">
+                                    <button type="button" class="btn btn-danger col col-lg-4 me-3 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                        <img src="../../resources/img/dashboard/eliminar.png" alt="" width="25px">
+                                    </button>
+                                    <button type="button" class="btn btn-primary col col-lg-4 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                                        <img src="../../resources/img/dashboard/borrar.png" alt="" width="25px">
+                                    </button>
+                                    
+                                    </div>
+                                </td>
+                            </tr>                              
+                        </tbody>        
+                    </table>                    
+                </div>
+            </div>
+        </div>  
+    </div>   
+    <!-- Modal Agregar-->
+    <div class="modal fade col-lg-12" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Registrar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation ms-2 mt-2" novalidate>
+                        <div class="row">    
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Contraseña</label>
+                                <input type="password" readonly class="form-control" id="validationCustom01" value="" required>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Estado Usuario</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Tipo Usuario</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-target="#exampleModal">Crear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Borrar-->
+    <div class="modal fade col-lg-12" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Mensaje de advertencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de eliminar el registro seleccionado?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Eliminar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Actualizar-->
+    <div class="modal fade col-lg-12" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Actualizar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation ms-2 mt-2" novalidate>
+                        <div class="row">    
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Contraseña</label>
+                                <input type="password" readonly class="form-control" id="validationCustom01" value="" required>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Estado Usuario</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Tipo Usuario</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-target="#exampleModal">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../resources/js/jQuery/jquery.min.js"></script>
+    <script src="../../resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../resources/js/dashboard/dashboard.js"></script>
+
+</body>
+
+</html>
