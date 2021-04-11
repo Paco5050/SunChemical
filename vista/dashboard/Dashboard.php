@@ -23,14 +23,14 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="border-right popo" id="sidebar-wrapper">
-            <div class="sidebar-heading papa"><img src="../../resources/img/dashboard/logo.png" alt="" width="200px" ></div>
+        <div class="border-right bg-secondary" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="../../resources/img/dashboard/logo.png" alt="" width="200px" class="rounded"></div>
             <div class="px-1 mx-1 list-group list-group-flush col">
-                <a id="menu1" class="list-group-item list-group-item-action btn btn-light my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
-                <a id="menu2" class="list-group-item list-group-item-action btn btn-dark my-1"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Entradas</a>
-                <a id="menu3" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/ordenes.png" alt="" width="25px" class="img-fluid img-thumbnail"> Ordenes</a>
-                <a id="menu6" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
-                <a id="menu7" class="list-group-item list-group-item-action btn btn-light my-1 rounded"><img src="../../resources/img/dashboard/usuario.png" alt="" width="25px" class="img-fluid img-thumbnail"> Usuarios</a>
+                <a id="menu1" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
+                <a id="menu2" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Entradas</a>
+                <a id="menu3" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/ordenes.png" alt="" width="25px" class="img-fluid img-thumbnail"> Ordenes</a>
+                <a id="menu6" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
+                <a id="menu7" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/usuario.png" alt="" width="25px" class="img-fluid img-thumbnail"> Usuarios</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

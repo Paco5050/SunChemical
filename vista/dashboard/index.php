@@ -31,7 +31,6 @@
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -39,13 +38,6 @@
                 <div class="carousel-caption d-none d-md-block text-light fondo rounded border border-light">
                   <h5>MarketFar</h5>
                   <p>Servicio de supermercado y farmacia, con envios hacia toda la zona metropolitana</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../../resources/img/dashboard/login2.jpg" class="d-block h-auto img-fluid filtro" alt="...">
-                <div class="carousel-caption d-none d-md-block text-light fondo ounded border border-light">
-                  <h5>MarketFar</h5>
-                  <p>Sistema de servicio al cliente para responder reclamos y quejas.</p>
                 </div>
               </div>
               <div class="carousel-item">
