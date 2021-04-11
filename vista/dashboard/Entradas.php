@@ -50,7 +50,7 @@
                 </div>
                 <div class="table-responsive"> 
                     <br>       
-                    <table id="tablaPersonas" class="table table-striped table-bordered table-condensed" style="width:100%">
+                    <table id="tablaPersonas" class="table table-striped table-bordered table-condensed table-dark" style="width:100%">
                         <thead class="text-center">
                             <tr class="align-middle">
                                 <th>ID</th>

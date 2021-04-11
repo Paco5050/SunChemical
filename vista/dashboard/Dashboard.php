@@ -14,8 +14,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-
-    <script src="../../resources/js/dashboard/pages.js" type="text/javascript"></script>
     
 </head>
 <body class="row g-0">
@@ -23,14 +21,13 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="border-right bg-secondary" id="sidebar-wrapper">
-            <div class="sidebar-heading"><img src="../../resources/img/dashboard/logo.png" alt="" width="200px" class="rounded"></div>
-            <div class="px-1 mx-1 list-group list-group-flush col">
+        <div class="border-right bg-light" id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="../../resources/img/dashboard/logo1.png" alt="" width="200px" class="rounded"></div>
+            <div class="list-group list-group-flush col">
                 <a id="menu1" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
                 <a id="menu2" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Entradas</a>
-                <a id="menu3" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/ordenes.png" alt="" width="25px" class="img-fluid img-thumbnail"> Ordenes</a>
-                <a id="menu6" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
-                <a id="menu7" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/usuario.png" alt="" width="25px" class="img-fluid img-thumbnail"> Usuarios</a>
+                <a id="menu3" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/reclamos.png" alt="" width="25px" class="img-fluid img-thumbnail"> Reclamos</a>
+                <a id="menu4" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -38,8 +35,8 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <button class="btn btn-dark" id="menu-toggle">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark p-1">
+                <button class="btn btn-secondary" id="menu-toggle">
                     <img src="../../resources/img/dashboard/pngegg.png" alt="" width="30px">
                 </button>
                 <div class="collapse navbar-collapse bar d-flex flex-row-reverse" id="navbarSupportedContent">
@@ -48,7 +45,7 @@
                             <a class="nav-link text-light " href="#"><img src="../../resources/img/dashboard/user.png" alt="" width="30px"></a>
                         </li>
                         <div class="dropdown">
-                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Nombre de Usuario
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -59,7 +56,7 @@
                     </ul>
                 </div>
             </nav>
-            <iframe id="content" class="px-1 mh-100" width="100%" height="685px"></iframe>
+            <iframe id="content" class="px-1 mh-100 " width="100%" height="1080px"></iframe>
         </div>
         <!-- /#page-content-wrapper -->
     </div>
@@ -75,14 +72,11 @@
 		$('#menu2').on('click', function(){
 			$('#content').attr('src', 'Entradas.php'); 
 		});
-		$('#menu3').on('click', function(){		
-			$('#content').attr('src', 'Ordenes.php');
+        $('#menu3').on('click', function(){		
+			$('#content').attr('src', 'Reclamos.php');
 		});
-        $('#menu6').on('click', function(){		
+        $('#menu4').on('click', function(){		
 			$('#content').attr('src', 'Empleado.php');
-		});
-        $('#menu7').on('click', function(){		
-			$('#content').attr('src', 'Usuarios.php');
 		});
 	});
     $(function () {
