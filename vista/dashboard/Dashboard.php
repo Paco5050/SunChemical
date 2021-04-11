@@ -29,8 +29,6 @@
                 <a id="menu1" class="list-group-item list-group-item-action btn btn-light my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
                 <a id="menu2" class="list-group-item list-group-item-action btn btn-dark my-1"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Entradas</a>
                 <a id="menu3" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/ordenes.png" alt="" width="25px" class="img-fluid img-thumbnail"> Ordenes</a>
-                <a id="menu4" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/reclamos.png" alt="" width="25px" class="img-fluid img-thumbnail"> Reclamos</a>
-                <a id="menu5" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/empresa.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empresa</a>
                 <a id="menu6" class="list-group-item list-group-item-action btn btn-light my-1"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
                 <a id="menu7" class="list-group-item list-group-item-action btn btn-light my-1 rounded"><img src="../../resources/img/dashboard/usuario.png" alt="" width="25px" class="img-fluid img-thumbnail"> Usuarios</a>
             </div>
@@ -79,12 +77,6 @@
 		});
 		$('#menu3').on('click', function(){		
 			$('#content').attr('src', 'Ordenes.php');
-		});
-        $('#menu4').on('click', function(){		
-			$('#content').attr('src', 'Reclamos.php');
-		});
-        $('#menu5').on('click', function(){		
-			$('#content').attr('src', 'Empresa.php');
 		});
         $('#menu6').on('click', function(){		
 			$('#content').attr('src', 'Empleado.php');
