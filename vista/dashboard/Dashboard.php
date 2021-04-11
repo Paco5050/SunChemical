@@ -73,7 +73,7 @@
 			$('#content').attr('src', 'Productos.php');
 		});
 		$('#menu2').on('click', function(){
-			$('#content').attr('src', 'Entradas.php');
+			$('#content').attr('src', 'Entradas.php'); 
 		});
 		$('#menu3').on('click', function(){		
 			$('#content').attr('src', 'Ordenes.php');
