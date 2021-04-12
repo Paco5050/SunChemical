@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="display-6">Administración de Entradas
+                <h1 class="display-6">Análisis de Reclamos
 
                 </h1>
             </div>

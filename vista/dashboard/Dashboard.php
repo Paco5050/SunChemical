@@ -25,9 +25,10 @@
             <div class="sidebar-heading"><img src="../../resources/img/dashboard/logo1.png" alt="" width="200px" class="rounded"></div>
             <div class="list-group list-group-flush col">
                 <a id="menu1" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
-                <a id="menu2" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Entradas</a>
                 <a id="menu3" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/reclamos.png" alt="" width="25px" class="img-fluid img-thumbnail"> Reclamos</a>
                 <a id="menu4" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
+                <a id="menu2" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/entradas.png" alt="" width="25px" class="img-fluid img-thumbnail"> Analisis</a>
+                <a id="menu5" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Revision</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -42,7 +43,7 @@
                 <div class="collapse navbar-collapse bar d-flex flex-row-reverse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item active ">
-                            <a class="nav-link text-light " href="#"><img src="../../resources/img/dashboard/user.png" alt="" width="30px"></a>
+                            <a class="nav-link text-light " href="#"><img src="../../resources/img/dashboard/sunchem.jpg" alt="" width="30px"></a>
                         </li>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,13 +71,16 @@
 			$('#content').attr('src', 'Productos.php');
 		});
 		$('#menu2').on('click', function(){
-			$('#content').attr('src', 'Entradas.php'); 
+			$('#content').attr('src', 'Analisis.php'); 
 		});
         $('#menu3').on('click', function(){		
 			$('#content').attr('src', 'Reclamos.php');
 		});
         $('#menu4').on('click', function(){		
 			$('#content').attr('src', 'Empleado.php');
+		});
+        $('#menu5').on('click', function(){		
+			$('#content').attr('src', 'Revision.php');
 		});
 	});
     $(function () {
