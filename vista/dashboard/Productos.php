@@ -56,20 +56,16 @@
                                 <th>Descripción</th>                                
                                 <th>Costo de Venta $</th>  
                                 <th>Cantidad</th>
-                                <th>Tipo de Producto</th>
-                                <th>Marca</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="align-middle">
                                 <td>1</td>
-                                <td>Caja de Chocolate</td>
-                                <td>Producto hecho a base de cacao, leche, azucar, colorante y almendras.</td>
-                                <td>18.00</td>    
-                                <td>2</td> 
-                                <td>Consumible</td> 
-                                <td>Hershey's</td> 
+                                <td>Cubeta de tinte</td>
+                                <td>Solvente base color rojo</td>
+                                <td>18.00</td>
+                                <td>3</td>      
                                 <td class="col-lg-2 ">
                                     <div class="row justify-content-md-center g-0">
                                     <button type="button" class="btn btn-danger col col-lg-4 me-3 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">

@@ -54,22 +54,20 @@
                         <thead class="text-center">
                             <tr class="align-middle">
                                 <th>ID</th>
-                                <th>Producto</th>
-                                <th>Proveedor</th>   
-                                <th>Empleado</th>                             
-                                <th>Cantidad de Entrada</th>  
-                                <th>Fecha</th>
+                                <th>Analisis</th>
+                                <th>Fecha</th>                             
+                                <th>Responsables</th>  
+                                <th>Resolución</th> 
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="align-middle">
                                 <td>1</td>
-                                <td>Caja de Chocolate</td>
-                                <td>Producto hecho a base de cacao, leche, azucar, colorante y almendras.</td>
-                                <td>Ernesto Cuernavaca</td>    
-                                <td>2</td> 
+                                <td>La maquinaria industrial debe recibir mantenimiento correctivo para evitar errores en producción</td>
                                 <td>15/03/2021</td> 
+                                <td>Valero Iriñez, Carlos Espina</td> 
+                                <td>Refacción de conponentes en la dispensadora de solvente</td> 
                                 <td class="col-lg-2 ">
                                     <div class="row justify-content-md-center g-0">
                                     <button type="button" class="btn btn-danger col col-lg-4 me-3 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
@@ -78,7 +76,6 @@
                                     <button type="button" class="btn btn-primary col col-lg-4 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                                         <img src="../../resources/img/dashboard/borrar.png" alt="" width="25px">
                                     </button>
-                                    
                                     </div>
                                 </td>
                             </tr>                              
@@ -94,45 +91,41 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Registrar Producto</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Registrar Revisión de reclamo</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation ms-2 mt-2" novalidate>
                         <div class="row">    
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Producto</label>
-                                <select class="form-select" id="validationCustom04" required>
-                                <option selected disabled value="">Escoje...</option>
-                                <option>...</option>
+                                <label for="validationCustom01" class="form-label">Análisis</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Proveedor</label>
-                                <select class="form-select" id="validationCustom04" required>
-                                <option selected disabled value="">Escoje...</option>
-                                <option>...</option>
+                                <label for="validationCustom01" class="form-label">Resolución</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Empleado</label>
-                                <select class="form-select" id="validationCustom04" required>
-                                <option selected disabled value="">Escoje...</option>
-                                <option>...</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="validationCustom03" class="form-label">Cantidad de Producto</label>
-                                <input type="number" class="form-control" id="validationCustom03" required>
-                            </div>
                             <div class="col-md-3 mb-3 birthday_datepicker">
                                 <div class="birthday_datepicker">
                                     <label class="mb-2">Fecha:</label>
                                     <input id="dob"  class=" form-control" placeholder="(yyyy/mm/dd)"/>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label" >Responsables</label>
+                                <select class="form-select" id="exampleFormControlTextarea1" required >
+                                <option selected disabled value="" >Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Escogidos</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required readonly=""></textarea>
+                            </div>                            
                         </div>
                     </form>
                 </div>

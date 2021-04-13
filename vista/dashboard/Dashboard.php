@@ -23,7 +23,7 @@
         <!-- Sidebar -->
         <div class="border-right bg-light" id="sidebar-wrapper">
             <div class="sidebar-heading"><img src="../../resources/img/dashboard/logo1.png" alt="" width="200px" class="rounded"></div>
-            <div class="list-group list-group-flush col">
+            <div class="list-group list-group-flush col p-2">
                 <a id="menu1" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/producto.png" alt="" width="25px" class="img-fluid img-thumbnail"> Productos</a>
                 <a id="menu3" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/reclamos.png" alt="" width="25px" class="img-fluid img-thumbnail"> Reclamos</a>
                 <a id="menu4" class="list-group-item list-group-item-action w-100 py-2 my-1 rounded"><img src="../../resources/img/dashboard/empleados.png" alt="" width="25px" class="img-fluid img-thumbnail"> Empleado</a>
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse bar d-flex flex-row-reverse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item active ">
-                            <a class="nav-link text-light " href="#"><img src="../../resources/img/dashboard/sunchem.jpg" alt="" width="30px"></a>
+                            <a class="nav-link text-light " href="#"><img src="../../resources/img/dashboard/user.png" alt="" width="30px"></a>
                         </li>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

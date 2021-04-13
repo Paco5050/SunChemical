@@ -47,26 +47,41 @@
                         <thead class="text-center">
                             <tr class="align-middle">
                                 <th>ID</th>
-                                <th>Cliente</th>
-                                <th>Tipo de Reclamo</th>                             
-                                <th>Descripcion</th>  
-                                <th>Estatus</th>
+                                <th>Tipo de reclamo</th>
+                                <th>Producto</th>                             
+                                <th>Cliente</th>  
+                                <th>Tipo de defecto</th>
                                 <th>Fecha</th>   
+                                <th>Peso (Kg)</th>   
+                                <th>Cubetas</th> 
+                                <th>Lote</th>
+                                <th>Estatus</th>  
+                                <th>Descripción</th>  
+                                <th>Foto</th>  
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="align-middle">
                                 <td>1</td>
-                                <td>Ernesto Cuernavaca</td> 
                                 <td>Queja</td>
-                                <td>Envoltorio roto.</td>   
-                                <td>En proceso</td> 
+                                <td>Solvente base color rojo</td>   
+                                <td>Ernesto Cuernavaca</td> 
+                                <td>Cantidad</td> 
                                 <td>15/03/2021</td> 
-                                <td class="col-lg-2 ">
-                                    <div class="row justify-content-md-center g-0">
-                                    <button type="button" class="btn btn-primary col col-lg-9 me-3 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                                        Imprimir Reclamo
+                                <td>70</td> 
+                                <td>2</td> 
+                                <td>#210-200</td>
+                                <td>En proceso</td>
+                                <td>Cantidad inexacta del lote de solvente color rojo</td>
+                                <td><img src="../../resources/img/dashboard/rojo.jpg" alt="" class="img-responsive  w-100"></td>
+                                <td class="col-lg-2">
+                                    <div class="row justify-content-md-center g-0 pl-2">
+                                    <button type="button" class="btn btn-primary col col-lg-5 me-3 p-0 w-100 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                        Imprimir 
+                                    </button>   
+                                    <button type="button" class="btn btn-success     col col-lg-5 me-3 p-0 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                                        Detalle
                                     </button>   
                                     </div>
                                 </td>
@@ -78,7 +93,7 @@
         </div>  
     </div>   
 
-    <!-- Modal Borrar-->
+    <!-- Modal Imprimir-->
     <div class="modal fade col-lg-12" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -88,6 +103,25 @@
             </div>
             <div class="modal-body">
                 ¿Está seguro de generar el siguiente reclamo?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Generar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ver Detalle-->
+    <div class="modal fade col-lg-12" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Mensaje informativo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Desea generar el detalle del reclamo?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

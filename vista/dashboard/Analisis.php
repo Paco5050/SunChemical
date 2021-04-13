@@ -54,22 +54,26 @@
                         <thead class="text-center">
                             <tr class="align-middle">
                                 <th>ID</th>
-                                <th>Producto</th>
-                                <th>Proveedor</th>   
-                                <th>Empleado</th>                             
-                                <th>Cantidad de Entrada</th>  
+                                <th>Reclamo</th>
+                                <th>Area de deteccion</th>   
+                                <th>Modo de falla</th>                             
+                                <th>Empleado</th>  
                                 <th>Fecha</th>
+                                <th>Estatus</th>
+                                <th>Corrección</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="align-middle">
                                 <td>1</td>
-                                <td>Caja de Chocolate</td>
-                                <td>Producto hecho a base de cacao, leche, azucar, colorante y almendras.</td>
-                                <td>Ernesto Cuernavaca</td>    
-                                <td>2</td> 
+                                <td>Cubetas de tinte rojo</td>
+                                <td>Area de producción</td>
+                                <td>Maquina expendedora de solvente falló</td>    
+                                <td>Ricardo Valbuena</td> 
                                 <td>15/03/2021</td> 
+                                <td>Resuelto</td> 
+                                <td>Mantenimiento de maquinaria industrial</td> 
                                 <td class="col-lg-2 ">
                                     <div class="row justify-content-md-center g-0">
                                     <button type="button" class="btn btn-danger col col-lg-4 me-3 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
@@ -94,21 +98,21 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Registrar Producto</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Registrar Analisis</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation ms-2 mt-2" novalidate>
                         <div class="row">    
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Producto</label>
+                                <label for="validationCustom01" class="form-label">Reclamo</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Proveedor</label>
+                                <label for="validationCustom01" class="form-label">Area detección</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
@@ -117,15 +121,27 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Modo de falla</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
                                 <label for="validationCustom01" class="form-label">Empleado</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="row">  
                             <div class="col-md-3 mb-3">
-                                <label for="validationCustom03" class="form-label">Cantidad de Producto</label>
-                                <input type="number" class="form-control" id="validationCustom03" required>
+                                <label for="validationCustom01" class="form-label">Estatus</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
                             </div>
                             <div class="col-md-3 mb-3 birthday_datepicker">
                                 <div class="birthday_datepicker">
@@ -133,6 +149,11 @@
                                     <input id="dob"  class=" form-control" placeholder="(yyyy/mm/dd)"/>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                    <label for="validationCustom01" class="form-label">Corrección</label>
+                                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                    </select>
+                                </div>
                         </div>
                     </form>
                 </div>
@@ -164,25 +185,25 @@
     </div>
 
     <!-- Modal Actualizar-->
-    <div class="modal fade col-lg-12" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal fade col-lg-12" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Actualizar Producto</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Actualizar Analisis</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation ms-2 mt-2" novalidate>
                         <div class="row">    
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Producto</label>
+                                <label for="validationCustom01" class="form-label">Reclamo</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Proveedor</label>
+                                <label for="validationCustom01" class="form-label">Area detección</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
@@ -191,15 +212,27 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Modo de falla</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
                                 <label for="validationCustom01" class="form-label">Empleado</label>
                                 <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Escoje...</option>
                                 <option>...</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="row">  
                             <div class="col-md-3 mb-3">
-                                <label for="validationCustom03" class="form-label">Cantidad de Producto</label>
-                                <input type="number" class="form-control" id="validationCustom03" required>
+                                <label for="validationCustom01" class="form-label">Estatus</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Escoje...</option>
+                                <option>...</option>
+                                </select>
                             </div>
                             <div class="col-md-3 mb-3 birthday_datepicker">
                                 <div class="birthday_datepicker">
@@ -207,12 +240,17 @@
                                     <input id="dob"  class=" form-control" placeholder="(yyyy/mm/dd)"/>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                    <label for="validationCustom01" class="form-label">Corrección</label>
+                                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                    </select>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">ACtualizar</button>
+                    <button type="button" class="btn btn-primary">Actualizar</button>
                 </div>
             </div>
         </div>
