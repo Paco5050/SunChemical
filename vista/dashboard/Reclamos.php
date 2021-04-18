@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="icon" href="../../resources/img/dashboard/icono.png" type="favicon/x-icon">
 
-    <title>MarketFar</title>
+    <title>SunChemical</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">

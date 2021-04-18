@@ -1,64 +1,92 @@
-<!DOCTYPE html>
-<html lang="es">
+
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 
+   CSS3,Bootstrap,Tailwind CSS which are 100% Mobile friendly. w3Hubs all Layouts are responsive 
+   cross browser supported, best quality world class designs. -->
+
+   <!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../resources/img/dashboard/icono.png" type="favicon/x-icon">
-
-    <title>MarketFar</title>
-
-    <!-- Custom styles for this template -->
-    <link href="../../resources/css/dashboard/login.css" rel="stylesheet" type="text/css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">   
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="../../resources/css/dashboard/dashboard.css" rel="stylesheet">
+    <title>SunChemical</title>
     <style>
-      img {
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(50%);
-      }
-      .fondo{background-color: #2A2C36;}
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-family: "Nunito Sans";
+        }
+
+        .form-control {
+            line-height: 2;
+        }
+
+        .bg-custom {
+            background-color: #6C63FF;
+        }
+
+        .btn-custom {
+            background-color: #3e3d56;
+            color: #fff;
+        }
+
+        .btn-custom:hover {
+            background-color: #33313f;
+            color: #fff;
+        }
+
+        label {
+            color: #fff;
+        }
+
+        a,
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        @media(max-width: 932px) {
+            .display-none {
+                display: none !important;
+            }
+        }
     </style>
 </head>
-<body class="bg-dark-x">
-    <section class="h-auto">
-      <div class="row g-0">
-        <div class="col-lg-7">
-          <img src="../../resources/img/dashboard/login1.jpg" class="d-block h-auto img-fluid " alt="">
-        </div>
-        <div class="col-lg-5">
-          <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 d-flex justify-content-center mb-auto">
-            <img src="../../resources/img/dashboard/logo.png" alt="" class="w-50" >
-          </div>
-          <div class="px-lg-5 py-lg-4 p-4 w-100 mt-auto">
-            <h1 class="text-light font-weight-bold mb-4 display-6 mx-0 ">"Inicie Sesión"</h1>
-            <form>
-              <div class="mb-2">
-                <label for="exampleInputEmail1" class="form-label text-light">E-mail</label>
-                <input type="email" class="form-control bg-dark py-2 border-0 text-light" placeholder="Ingresa tu correo" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-2">
-                <label for="exampleInputPassword1" class="form-label text-light">Contraseña</label>
-                <input type="password" class="form-control bg-dark py-2 border-0 text-light" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
-                <div class="pt-1"><a href="#" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a></div>
-              </div>
-              <a href="index.php" class="btn btn-dark w-100 py-2 btn-outline-light"><img src="../../resources/img/dashboard/usuario.png" alt="" width="25px" class="img-fluid img-thumbnail">Iniciar Sesión</a>
-            </form>
-          </div>
-          <div class="mt-auto">
-            <br>
-          <a href="Usuario.php" class="btn btn-dark w-25 py-2 btn-outline-light rounded mx-auto d-block">Crear Usuario</a>
-          </div>
-        </div>        
-      </div>
-    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../../resources/js/efectos/jquery.min.js"></script>
-    <script src="../../resources/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../../resources/js/dashboard/dashboard.js"></script>
+<body>
+    <div class="row m-0 h-100">
+        <div class="col col-lg-5 p-0 text-center d-flex justify-content-center align-items-center display-none">
+            <img src="../../resources/img/dashboard/sunchem1.png" class="w-75">
+        </div>
+        <div class="col p-0 bg-custom d-flex justify-content-center align-items-center flex-column w-100 bg-dark">
+          <img src="../../resources/img/dashboard/login1.png" class="w-50">
+            <form class="w-75" action="#">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Ingrese su contraseña"
+                        required>
+                </div>
+                <div class="pt-1"><a href="Recuperaciones.php" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a></div>
+                <a href="index.php" class="btn btn-dark w-75 py-2 btn-outline-light rounded mx-auto d-block mt-3">Iniciar Sesión</a>
+                <div class="mt-auto">
+                    <br>
+                    <a href="usuario.php" class="btn btn-dark w-25 py-2 btn-outline-light rounded mx-auto d-block mt-6">Crear Usuario</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../resources/img/dashboard/icono.png" type="favicon/x-icon">
 
-    <title>MarketFar</title>
+    <title>SunChemical</title>
 
     <!-- Custom styles for this template -->
     <link href="../../resources/css/dashboard/dashboard.css" rel="stylesheet" type="text/css">
