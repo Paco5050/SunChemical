@@ -10,7 +10,6 @@
     <title>SunChemical</title>
 
     <!-- Custom styles for this template -->
-    <link href="../../resources/css/dashboard/login.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
     <link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">  
@@ -42,74 +41,106 @@
                 </div>
             </div>
             <div class="col-md-6">
-              <div class="col-md-12">
-                <label for="validationCustomUsername" class="form-label">Correo Empleado</label>
-                <div class="input-group has-validation">
-                <input type="text" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="row">
+                <div class="col-md-12 ">
+                  <label for="validationCustomUsername" class="form-label">Cliente</label>
+                  <div class="input-group has-validation">
+                  <input  class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required readonly>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustomUsername" class="form-label">Correo electrónico</label>
+                  <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="email" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  </div>
+                </div>
+              </div>              
+              <div class="row">
+                <div class="col-md-12">
+                    <label for="validationCustom04" class="form-label">Defecto</label>
+                    <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escoje...</option>
+                    <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom04" class="form-label">Tipo de Reclamo</label>
+                    <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escoje...</option>
+                    <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom04" class="form-label">Producto</label>
+                    <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escoje...</option>
+                    <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustomUsername" class="form-label">Fecha:</label>
+                  <div class="input-group has-validation">
+                  <input type="date" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                </div>
               </div>
-              <div class="col-md-12">
-                <label for="validationCustomUsername" class="form-label">Correo Empleado</label>
-                <div class="input-group has-validation">
-                <input type="text" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+              <div class="">
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label">Descripción reclamo:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <div class="valid-feedback">
+                  Looks good!
+                  </div>
+                </div>
               </div>
-              <div class="col-md-12">
-                <label for="validationCustomUsername" class="form-label">Correo Empleado</label>
-                <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+              <div class="">
+                <div class="col-md-12">
+                    <label for="validationCustom03" class="form-label">Cantidad de Cubetas</label>
+                    <input type="number" class="form-control" id="validationCustom03" required="">
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustomUsername" class="form-label">#Lote</label>
+                  <div class="input-group has-validation">
+                  <input type="text" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationCustomUsername" class="form-label">Peso (Kg)</label>
+                  <div class="input-group has-validation">
+                  <input type="text" class="form-control h-25 d-inline-block" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                </div>
               </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <label for="validationCustom04" class="form-label">Estatus</label>
+                    <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escoje...</option>
+                    <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid state.
+                    </div>
+                </div>
+              </div>
+              
             </div>
           </div>  
-          <div class="row">
-            </div>
-              <div class="col-md-12">
-                <label for="validationCustom04" class="form-label">Genero</label>
-                <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Escoje...</option>
-                <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Tipo Reclamo</label>
-                <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Escoje...</option>
-                <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Estatus</label>
-                <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Escoje...</option>
-                <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-                </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <label for="validationCustom02" class="form-label">Dirección del Empleado</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              <div class="valid-feedback">
-              Looks good!
-              </div>
-            </div>
-          </div>
         </form>
       </div>
       
       <div class="mt-auto">
         <br>
-        <a href="index.php" class="btn btn-dark w-25 py-2  rounded mx-auto d-block mt-6">Enviar Reclamo</a>
+        <a href="index.php" class="btn btn-dark w-25 py-2 m-4 rounded mx-auto d-block mt-6">Enviar Reclamo</a>
       </div>
       
     </div>

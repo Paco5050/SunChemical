@@ -235,15 +235,8 @@
                                 <option>...</option>
                                 </select>
                             </div>
-                            <div class="col-md-3 mb-3 birthday_datepicker">
-                                <div >
-                                    <label class="mb-2">Fecha:</label>
-                                    <input id="dob" type="date"  class=" form-control" />
-                                </div>
-                            </div>
                             <div class="col-md-6">
-                                    <label for="validationCustom01" class="form-label">Corrección</label>
-                                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                    <label type="date" class="form-control" id="validationCustom01" value="" required>
                                     </select>
                             </div>
                         </div>
