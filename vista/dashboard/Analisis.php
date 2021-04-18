@@ -18,6 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="../../resources/css/dashboard/dashboard.css" rel="stylesheet">
 
+    
 </head>
 
 <body class="g-0">
@@ -235,9 +236,9 @@
                                 </select>
                             </div>
                             <div class="col-md-3 mb-3 birthday_datepicker">
-                                <div class="birthday_datepicker">
+                                <div >
                                     <label class="mb-2">Fecha:</label>
-                                    <input id="dob"  class=" form-control" placeholder="(yyyy/mm/dd)"/>
+                                    <input id="dob" type="date"  class=" form-control" />
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -261,7 +262,7 @@
     <script src="../../resources/js/dashboard/dashboard.js"></script>
     
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../../resources/js/bootstrap/jquery.maskedinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
     <script src="../../resources/js/bootstrap/masked.js"></script>
 </body>
 
