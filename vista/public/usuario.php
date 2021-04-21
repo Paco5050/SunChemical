@@ -30,7 +30,7 @@
             <div class="col-md-6">
                 <div class="file-field ps-2 ">
                     <div class="mb-2 ms-5 text-center">
-                    <label for="validationCustomUsername" class="form-label">Foto del cliente</label>
+                    <label for="validationCustomUsername" class="form-label">Foto cliente</label>
                     <br>
                     <img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" class="rounded-circle z-depth-1-half avatar-pic img-responsive w-50" alt="example placeholder avatar">
                     </div>
