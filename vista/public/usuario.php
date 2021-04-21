@@ -88,28 +88,6 @@
           </div>
           <hr>
           <div class="row">
-            <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Tipo Reclamo</label>
-                <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Escoje...</option>
-                <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Estatus</label>
-                <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Escoje...</option>
-                <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-                </div>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-md-12">
               <label for="validationCustom02" class="form-label">Dirección</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
